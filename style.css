@@ -17,3 +17,10 @@ body {
     background-image: url(images/gettyimages-930662740-612x612.jpg);
     background-size: cover;
 }
+
+.container {
+    width: 1408px;
+    height: 709px;
+    left: 16px;
+    top: 1266px;
+}
