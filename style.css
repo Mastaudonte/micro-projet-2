@@ -56,3 +56,13 @@ body {
     width: 311px;
     height: 404px;
 }
+
+#card {
+    text-align: center;
+    width: 340px;
+    height: 560px;
+    left: 16px;
+    top: 1332px;
+    background: #C4C4C4;
+    border-radius: 20px;
+}
