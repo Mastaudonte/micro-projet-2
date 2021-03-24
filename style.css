@@ -6,3 +6,14 @@
 #navbarNav {
     margin-left: 500px;
 }
+
+body {
+    background-color: gray;
+}
+
+.accueil {
+    height: 90.7vh;
+    width: 100vw;
+    background-image: url(images/gettyimages-930662740-612x612.jpg);
+    background-size: cover;
+}
