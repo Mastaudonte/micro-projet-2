@@ -23,4 +23,11 @@ body {
     height: 709px;
     left: 16px;
     top: 1266px;
+    background-color: rgb(255, 255, 255);
+}
+
+.team {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
 }
