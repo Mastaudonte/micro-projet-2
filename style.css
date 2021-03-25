@@ -13,7 +13,12 @@ body {
 
 .carousel-item {
     height: 90.7vh;
-    width: 50vw;
+    width: 40vw;
+}
+
+.d-block {
+    height: 90.7vh;
+    width: 40vw;
 }
 
 .container {
