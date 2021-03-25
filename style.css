@@ -11,11 +11,9 @@ body {
     background-color: gray;
 }
 
-.accueil {
+.carousel-item {
     height: 90.7vh;
-    width: 100vw;
-    background-image: url(images/gettyimages-930662740-612x612.jpg);
-    background-size: cover;
+    width: 50vw;
 }
 
 .container {
