@@ -51,3 +51,15 @@ body {
     background: #C4C4C4;
     border-radius: 14px;
 }
+
+.card-img-top {
+    width: 311px;
+    height: 404px;
+    text-align: center;
+}
+
+.container-card {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+}
