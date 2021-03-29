@@ -16,9 +16,10 @@ body {
     width: 40vw;
 }
 
-.d-block {
-    height: 90.7vh;
-    width: 40vw;
+.prez {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .container {
@@ -65,4 +66,37 @@ body {
     display: flex;
 	flex-direction: row;
     justify-content: space-around;
+}
+
+#square {
+    width: 25px;
+    padding: 25px;
+}
+
+.square-one {
+    background-color: blue;
+}
+
+.square-two {
+    background-color: red;
+}
+
+.square-three {
+    background-color: yellow;
+}
+
+.square-four {
+    background-color: brown;
+}
+
+.square-five {
+    background-color: brown;
+}
+
+.square-six {
+    background-color: black;
+}
+
+.square-seven {
+    background-color: white;
 }
