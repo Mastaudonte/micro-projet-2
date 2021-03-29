@@ -69,8 +69,21 @@ body {
 }
 
 #square {
+    margin-left: 5px;
     width: 25px;
     padding: 25px;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+
+#black-square {
+    margin-left: 5px;
+    width: 25px;
+    padding: 25px;
+    border: solid;
+    border-color: white;
+    border-radius: 10px;
 }
 
 .square-one {
@@ -107,4 +120,10 @@ body {
 
 .square-nine {
     background-color: green;
+}
+
+.select-color {
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
 }
