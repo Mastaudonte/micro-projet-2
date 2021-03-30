@@ -68,6 +68,25 @@ body {
     justify-content: space-around;
 }
 
+.counter {
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#btn1 {
+    text-align: center;
+    height: 25px;
+    width: 25px;
+}
+
+#btn2 {
+    text-align: center;
+    height: 25px;
+    width: 25px;
+}
+
 #square {
     margin-left: 5px;
     width: 25px;
