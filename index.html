@@ -176,13 +176,18 @@
     <div class="ajout-un">
       <h3>Force</h3>
       <div class="interrupteur">
-        <button type="button" class="moins">-</button>
+        <button id="btn1" type="button" class="moins">-</button>
         <h3 class="compteur"></h3>
-        <button type="button" class="plus">+</button>
+        <button id="btn2" type="button" class="plus">+</button>
         <script type="application/javascript">
+
+        // compteur 
           var element = document.querySelector('.compteur')
-          //console.log(element)
           element.innerText = counter
+        
+        // compteur bouton
+          var element = document.querySelector('#btn1')
+          var element = document.querySelector('#btn2')
         </script>
       </div>
     </div>
