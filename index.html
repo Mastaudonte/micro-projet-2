@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Cyborg Society</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
@@ -30,6 +30,8 @@
       </div>
     </nav>
   </header>
+
+  <!------------------------------ CARROUSEL ---------------------------->
   <div class="carrousel-container">
     <div id="carrousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -79,6 +81,8 @@
       </a>
     </div>
   </div>
+
+  <!------------------------------ CARD ---------------------------------->
   <div class="container">
     <div class="team">
       <div class="clone">
@@ -93,40 +97,62 @@
         <div class="card" style="width: 277px; height: 569px; border-radius: 20px;">
           <img class="card-img-top" src="/images/cyborg_7.png" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">STANDAR CLONE</p>
           </div>
         </div>
-        <div class="interrupteur"></div>
+        <div class="interrupteur">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">SELECT</label>
+          </div>
+        </div>
       </div>
       <div class="premium-clone">
         <div class="card" style="width: 277px; height: 569px; border-radius: 20px;">
           <img class="card-img-top" src="/images/cyborg.png" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">PREMIUM CLONE</p>
           </div>
         </div>
-        <div class="interrupteur"></div>
+        <div class="interrupteur">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">SELECT</label>
+          </div>
+        </div>
       </div>
       <div class="standar-transfert">
         <div class="card" style="width: 277px; height: 569px; border-radius: 20px;">
           <img class="card-img-top" src="/images/cyborg_2.png" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">STANDAR TRANSFERT</p>
           </div>
         </div>
-        <div class="interrupteur"></div>
+        <div class="interrupteur">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch3">
+            <label class="custom-control-label" for="customSwitch3">SELECT</label>
+          </div>
+        </div>
       </div>
       <div class="premium-transfert">
         <div class="card" style="width: 277px; height: 569px; border-radius: 20px;">
           <img class="card-img-top" src="/images/cyborg_6.png" alt="Card image cap">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">PREMIUM TRANSFERT</p>
           </div>
         </div>
-        <div class="interrupteur"></div>
+        <div class="interrupteur">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" disabled id="customSwitch4">
+            <label class="custom-control-label" for="customSwitch4">INDISPONIBLE</label>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!---------------------------- PERSONNAGE ----------------------------->
   <div class="sexe">
     <h1>SEXE</h1>
     <div class="femme">
@@ -172,22 +198,35 @@
     </div>
   </div>
   <div class="ajout personnalisé">
+
+    <!----------------------- PERSONNALISATION ----------------------->
     <h1>AJOUT PERSONNALISE</h1>
     <div class="ajout-un">
       <h3>Force</h3>
-      <div class="interrupteur">
+      <div class="counter">
         <button id="btn1" type="button" class="moins">-</button>
-        <h3 class="compteur"></h3>
+        <h4 id="number-counter"></h4>
         <button id="btn2" type="button" class="plus">+</button>
         <script type="application/javascript">
 
-        // compteur 
-          var element = document.querySelector('.compteur')
+        var counter = 0
+        console.log(counter)
+        // compteur
+          var element = document.querySelector('#number-counter')
           element.innerText = counter
-        
-        // compteur bouton
-          var element = document.querySelector('#btn1')
-          var element = document.querySelector('#btn2')
+
+        // compteur bouton 
+          var btn1 = document.querySelector('#btn1')
+          btn1.addEventListener('click', function() {
+            counter-- 
+            element.innerText = counter
+          })
+
+          var btn2 = document.querySelector('#btn2')
+          btn2.addEventListener('click', function() {
+            counter++ 
+            element.innerText = counter
+          })
         </script>
       </div>
     </div>
@@ -204,9 +243,9 @@
     <div class="moyen-payement"></div>
     <div class="montant"></div>
   </div>
-
+                  
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
