@@ -38,7 +38,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
 
 .prez {
@@ -51,9 +51,6 @@ body {
     margin-top: 100px;
     width: 1408px;
     height: 709px;
-    left: 16px;
-    top: 1266px;
-    background-color: rgb(255, 255, 255);
 }
 
 .sexe {
@@ -61,6 +58,7 @@ body {
 }
 
 .sexe-choice {
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
 }
@@ -77,7 +75,6 @@ body {
     height: 50px;
     left: 31px;
     top: 1266px;
-    background: #C4C4C4;
     border-radius: 14px;
 }
 
@@ -87,7 +84,6 @@ body {
     height: 50px;
     left: 31px;
     top: 1266px;
-    background: #C4C4C4;
     border-radius: 14px;
 }
 
@@ -101,7 +97,14 @@ body {
     text-align: center;
 }
 
+.custom-control-input {
+    width: 20px;
+}
+
 .container-card {
+    width: 1200px;
+    margin-top: 100px;
+    margin-left: -50px;
     display: flex;
 	flex-direction: row;
     justify-content: space-around;
@@ -109,11 +112,11 @@ body {
 
 .card {
     background-color:#ffffff;
-    border:1px solid gray inset;
+    border:1px solid rgb(24, 24, 24) inset;
     padding:5px;
-    box-shadow:2px 2px 10px rgb(167, 167, 167) inset;
-    -moz-box-shadow:2px 2px 10px rgb(167, 167, 167) inset;
-    -webkit-box-shadow:2px 2px 10px rgb(167, 167, 167) inset;
+    box-shadow: 
+        2px 2px 0 rgba(44, 44, 44, 0.4),
+        -2px -2px 0 rgb(134, 134, 134);
     }
 
 .counter {
@@ -124,9 +127,31 @@ body {
     justify-content: space-around;
 }
 
-.ajout-un {
+#bonus {
+    margin-top: 25px;
     display: flex;
-    justify-content: center;	
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.montant {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 10px; 
+    border-radius: 10px; 
+    background: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px #616161,
+    -2px -2px 5px #999999;
+    box-shadow: 2px 2px 5px #616161,
+    -2px -2px 5px #999999;
 }
 
 #btn1 {
@@ -148,7 +173,40 @@ body {
     width: 25px;
     padding: 25px;
     border: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#s2 {
+    margin-left: 0px;
+    width: 15px;
+    padding: 15px;
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#s2:hover {
+    -webkit-border-radius: 10px; 
+    border-radius: 10px; 
+    background: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px #616161,
+    -2px -2px 5px #999999;
+    box-shadow: 2px 2px 5px #616161,
+    -2px -2px 5px #999999;
+    border-color: #65bd82;
+    border-radius: 10px;
+}
+
+#li.s2{
+    -webkit-border-radius: 10px; 
+    border-radius: 10px; 
+    background: #ffffff;
+    -webkit-box-shadow: 2px 2px 5px #616161,
+    -2px -2px 5px #999999;
+    box-shadow: 2px 2px 5px #616161,
+    -2px -2px 5px #999999;
+    border-color: #65bd82;
     border-radius: 10px;
 }
 
@@ -157,66 +215,128 @@ body {
     width: 25px;
     padding: 25px;
     border: solid;
-    border-color: white;
+    border-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.ajouts {
+    margin-top: 100px;
+}
+
+#bs2 {
+    margin-left: 0px;
+    width: 15px;
+    padding: 15px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
 .square-one {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.3);
 }
 
 .square-two {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
 .square-three {
-    background-color: yellow;
+    background-color: rgba(255, 255, 0, 0.3);
 }
 
 .square-four {
-    background-color: brown;
+    background-color: rgba(165, 42, 42, 0.3);
 }
 
 .square-five {
-    background-color: brown;
+    background-color: rgba(94, 44, 44, 0.3);
 }
 
 .square-six {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .square-seven {
-    background-color: silver;
+    background-color: rgba(192, 192, 192, 0.3);
 }
 
 .square-eight {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
 .square-nine {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.3);
 }
 
 .square-ten {
+    background-color: rgb(162, 0, 255, 0.3);
+}
+
+.square-one2 {
+    background-color: blue;
+}
+
+.square-two2 {
+    background-color: red;
+}
+
+.square-three2 {
+    background-color: yellow;
+}
+
+.square-four2 {
+    background-color: brown;
+}
+
+.square-five2 {
+    background-color: rgb(94, 44, 44);
+}
+
+.square-six2 {
+    background-color: black;
+}
+
+.square-seven2 {
+    background-color: silver;
+}
+
+.square-eight2 {
+    background-color: grey;
+}
+
+.square-nine2 {
+    background-color: green;
+}
+
+.square-ten2 {
     background-color: rgb(162, 0, 255);
 }
 
 .select-color {
+    width: 1000px;
     display: flex;
 	flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
     text-align: center;
+    font-family: 'Train One', cursive;
+    text-decoration: underline;
 }
 
 h2 {
     text-align: center;
+    font-family: 'Train One', cursive;
+    text-decoration: underline;
 }
 
 h3 {
     text-align: center;
+    font-family: 'DotGothic16', sans-serif;
 }
 
 .femme {
@@ -224,6 +344,10 @@ h3 {
     width: 400px;
     background: rgb(255, 255, 255);
     border-radius: 50px;
+    background-color:rgb(255, 255, 255);
+    padding:5px;
+    box-shadow:4px 4px 4px rgb(85, 85, 85),
+    -2px -2px 4px rgb(182, 182, 182);
 }
 
 .symbole-f {
@@ -233,11 +357,19 @@ h3 {
     margin-right: 94.5px;
 }
 
+.apparence {
+    margin-top: 100px;
+}
+
 .homme {
     height: 400px;
     width: 400px;
     background: rgb(255, 255, 255);
     border-radius: 50px;
+    background-color:rgb(255, 255, 255);
+    padding:5px;
+    box-shadow:4px 4px 4px rgb(85, 85, 85),
+    -2px -2px 4px rgb(182, 182, 182);
 }
 
 .symbole-h {
@@ -245,4 +377,40 @@ h3 {
     margin-bottom: 50px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.clone {
+    box-shadow: 0 1px 0 #eee,
+    0 2px 0 #e5e5e5,
+    -1px 3px 0 #C8C8C8,
+    -1px 4px 0 #C1C1C1,
+    -2px 5px 0 #B9B9B9,
+    -2px 4px 0 #B2B2B2,
+    -2px 3px 2px rgba(0,0,0, 0.6),
+    -2px 3px 8px rgba(0,0,0, 0.2),
+    -2px 3px 45px rgba(0,0,0, 0.4);
+}
+
+.transfert {
+    box-shadow: 0 1px 0 #eee,
+    0 2px 0 #e5e5e5,
+    -1px 3px 0 #C8C8C8,
+    -1px 4px 0 #C1C1C1,
+    -2px 5px 0 #B9B9B9,
+    -2px 4px 0 #B2B2B2,
+    -2px 3px 2px rgba(0,0,0, 0.6),
+    -2px 3px 8px rgba(0,0,0, 0.2),
+    -2px 3px 45px rgba(0,0,0, 0.4);
+}
+
+.color-hair {
+    margin-top: 25px;
+}
+
+.color-eyes {
+    margin-top: 25px;
+}
+
+.jauges {
+    margin-top: 25px;
 }
