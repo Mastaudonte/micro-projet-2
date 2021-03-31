@@ -6,6 +6,8 @@
     <title>Cyborg Society</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="app.js"></script>
 </head>
@@ -93,7 +95,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1">
-            <label class="custom-control-label" for="customSwitch1">select</label>
+            <label class="custom-control-label" for="customSwitch1">SELECT</label>
           </div>
         </div>
       </div>
@@ -107,7 +109,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch2">
-            <label class="custom-control-label" for="customSwitch2">select</label>
+            <label class="custom-control-label" for="customSwitch2">SELECT</label>
           </div>
         </div>
       </div>
@@ -121,7 +123,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch3">
-            <label class="custom-control-label" for="customSwitch3">select</label>
+            <label class="custom-control-label" for="customSwitch3">SELECT</label>
           </div>
         </div>
       </div>
@@ -161,81 +163,125 @@
       <div class="color-hair">
         <h3>Hair Colors</h3>
         <div class="select-color">
-          <div id="square" class="square-three"></div>
-          <div id="square" class="square-one"></div>
-          <div id="square" class="square-ten"></div>
-          <div id="square" class="square-two"></div>
-          <div id="square" class="square-four"></div>
-          <div id="square" class="square-five"></div>
-          <div id="black-square" class="square-six"></div>
-          <div id="square" class="square-seven"></div>
+          <div id="square" class="square-three">
+            <div id="s2" class="square-three2"></div>
+          </div>
+          <div id="square" class="square-one">
+            <div id="s2" class="square-one2"></div>
+          </div>
+          <div id="square" class="square-ten">
+            <div id="s2" class="square-ten2"></div>
+          </div>
+          <div id="square" class="square-two">
+            <div id="s2" class="square-two2"></div>
+          </div>
+          <div id="square" class="square-four">
+            <div id="s2" class="square-four2"></div>
+          </div>
+          <div id="square" class="square-five">
+            <div id="s2" class="square-five2"></div>
+          </div>
+          <div id="black-square" class="square-six">
+            <div id="bs2" class="square-six2"></div>
+          </div>
+          <div id="square" class="square-seven">
+            <div id="s2" class="square-seven2"></div>
+          </div>
         </div>
       </div>
       <div class="color-eyes">
         <h3>Eyes Colors</h3>
         <div class="select-color">
-          <div id="square" class="square-three"></div>
-          <div id="square" class="square-nine"></div>
-          <div id="square" class="square-one"></div>
-          <div id="square" class="square-ten"></div>
-          <div id="square" class="square-two"></div>
-          <div id="square" class="square-four"></div>
-          <div id="square" class="square-five"></div>
-          <div id="black-square" class="square-six"></div>
-          <div id="square" class="square-eight"></div>
+          <div id="square" class="square-three">
+            <div id="s2" class="square-three2"></div>
+          </div>
+          <div id="square" class="square-nine">
+            <div id="s2" class="square-nine2"></div>
+          </div>
+          <div id="square" class="square-one">
+            <div id="s2" class="square-one2"></div>
+          </div>
+          <div id="square" class="square-ten">
+            <div id="s2" class="square-ten2"></div>
+          </div>
+          <div id="square" class="square-two">
+            <div id="s2" class="square-two2"></div>
+          </div>
+          <div id="square" class="square-four">
+            <div id="s2" class="square-four2"></div>
+          </div>
+          <div id="square" class="square-five">
+            <div id="s2" class="square-five2"></div>
+          </div>
+          <div id="black-square" class="square-six">
+            <div id="bs2" class="square-six2"></div>
+          </div>
+          <div id="square" class="square-eight">
+            <div id="s2" class="square-eight2"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="jauges">
-      <h3>Taille</h3>
-      <div class="jauges"></div>
     </div>
   </div>
 
   <!----------------------- PERSONNALISATION ----------------------->
-  <div class="ajout personnalisé">
+  <div class="ajouts">
     <h1>AJOUT PERSONNALISE</h1>
-    <div class="ajout-un">
-      <h3>Force</h3>
-      <div class="counter">
-        <button id="btn1" type="button" class="moins">-</button>
-        <h4 id="number-counter"></h4>
-        <button id="btn2" type="button" class="plus">+</button>
-        <script type="application/javascript">
-
-        var counter = 0
-        console.log(counter)
-        // compteur
-          var element = document.querySelector('#number-counter')
-          element.innerText = counter
-
-        // compteur bouton 
-          var btn1 = document.querySelector('#btn1')
-          btn1.addEventListener('click', function() {
-            counter-- 
+    <div id="bonus">
+      <div class="ajout-un">
+        <h3>Force</h3>
+        <div class="counter">
+          <button id="btn1" type="button" class="moins">-</button>
+          <h4 id="number-counter"></h4>
+          <button id="btn2" type="button" class="plus">+</button>
+          <script type="application/javascript">
+  
+          var counter = 0
+          console.log(counter)
+          // compteur
+            var element = document.querySelector('#number-counter')
             element.innerText = counter
-          })
-
-          var btn2 = document.querySelector('#btn2')
-          btn2.addEventListener('click', function() {
-            counter++ 
-            element.innerText = counter
-          })
-        </script>
+  
+          // compteur bouton 
+            var btn1 = document.querySelector('#btn1')
+            btn1.addEventListener('click', function() {
+              counter-- 
+              element.innerText = counter
+            })
+  
+            var btn2 = document.querySelector('#btn2')
+            btn2.addEventListener('click', function() {
+              counter++ 
+              element.innerText = counter
+            })
+          </script>
+        </div>
       </div>
-    </div>
-    <div class="ajout-deux">
-      <h3>Agilité</h3>
-      <div class="interrupteur"></div>
-    </div>
-    <div class="ajout-trois">
-      <h3>Endurance</h3>
-      <div class="interrupteur"></div>
+      <div class="ajout-deux">
+        <h3>Agilité</h3>
+        <div class="interrupteur">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch5">
+            <label class="custom-control-label" for="customSwitch5"></label>
+          </div>
+        </div>
+      </div>
+      <div class="ajout-trois">
+        <h3>Endurance</h3>
+        <div class="interrupteur">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch6">
+            <label class="custom-control-label" for="customSwitch6"></label>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="reglement">
+    <div class="montant">
+      <h2 class="prix">15 090 $</h2>
+    </div>
     <div class="moyen-payement"></div>
-    <div class="montant"></div>
   </div>
                   
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
