@@ -32,54 +32,44 @@
   </header>
 
   <!------------------------------ CARROUSEL ---------------------------->
-  <div class="carrousel-container">
-    <div id="carrousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100 prez" src="images/cyborg_4.png" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+  <div class="carousel">
+    <div class="container-fluid">
+      <div id="carousel-homepage" class="carousel slide imageCarousel " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-homepage" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-homepage" data-slide-to="1"></li>
+          <li data-target="#carousel-homepage" data-slide-to="2"></li>
+          <li data-target="#carousel-homepage" data-slide-to="3"></li>
+          <li data-target="#carousel-homepage" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carroussel/cyborg_slider_4.png" class="d-block w-100 imageCarousel" alt="Cyborg 1">
           </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 prez" src="images/cyborg_5.png" alt="Second slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+          <div class="carousel-item">
+            <img src="images/carroussel/cyborg_slider.png" class="d-block w-100 imageCarousel" alt="Cyborg 2">
           </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 prez" src="images/cyborg.png" alt="Fourth slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+          <div class="carousel-item">
+            <img src="images/carroussel/cyborg_slider_5.png" class="d-block w-100 imageCarousel" alt="Cyborg 3">
           </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 prez" src="images/cyborg_6.png" alt="Fiveth slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+          <div class="carousel-item">
+            <img src="images/carroussel/cyborg_slider_6.png" class="d-block w-100 imageCarousel" alt="Cyborg 4">
           </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100 prez" src="images/cyborg_8.jpg" alt="Sixth slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>...</h5>
-            <p>...</p>
+          <div class="carousel-item">
+            <img src="images/carroussel/cyborg_slider_8.png" class="d-block w-100 imageCarousel" alt="Cyborg 5">
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carousel-homepage" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carousel-homepage" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+      
+    </div>  
   </div>
 
   <!------------------------------ CARD ---------------------------------->
@@ -103,7 +93,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch1">
-            <label class="custom-control-label" for="customSwitch1">SELECT</label>
+            <label class="custom-control-label" for="customSwitch1">select</label>
           </div>
         </div>
       </div>
@@ -117,7 +107,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch2">
-            <label class="custom-control-label" for="customSwitch2">SELECT</label>
+            <label class="custom-control-label" for="customSwitch2">select</label>
           </div>
         </div>
       </div>
@@ -131,7 +121,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch3">
-            <label class="custom-control-label" for="customSwitch3">SELECT</label>
+            <label class="custom-control-label" for="customSwitch3">select</label>
           </div>
         </div>
       </div>
@@ -145,7 +135,7 @@
         <div class="interrupteur">
           <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" disabled id="customSwitch4">
-            <label class="custom-control-label" for="customSwitch4">INDISPONIBLE</label>
+            <label class="custom-control-label" for="customSwitch4"><p class="indisponible">INDISPONIBLE</p></label>
           </div>
         </div>
       </div>
@@ -155,11 +145,13 @@
   <!---------------------------- PERSONNAGE ----------------------------->
   <div class="sexe">
     <h1>SEXE</h1>
-    <div class="femme">
-      <img src="images/pngegg (16).png" class="symbole-f">
-    </div>
-    <div class="homme">
-      <img src="images/pngegg (17).png" class="symbole-h">
+    <div class="sexe-choice">
+      <div class="femme">
+        <img src="images/symbole-f.png" class="symbole-f">
+      </div>
+      <div class="homme">
+        <img src="images/symbole-h.png" class="symbole-h">
+      </div>
     </div>
   </div>
   <div class="apparence">
@@ -169,9 +161,10 @@
       <div class="color-hair">
         <h3>Hair Colors</h3>
         <div class="select-color">
-          <div id="square" class="square-one"></div>
-          <div id="square" class="square-two"></div>
           <div id="square" class="square-three"></div>
+          <div id="square" class="square-one"></div>
+          <div id="square" class="square-ten"></div>
+          <div id="square" class="square-two"></div>
           <div id="square" class="square-four"></div>
           <div id="square" class="square-five"></div>
           <div id="black-square" class="square-six"></div>
@@ -181,14 +174,15 @@
       <div class="color-eyes">
         <h3>Eyes Colors</h3>
         <div class="select-color">
-          <div id="square" class="square-one"></div>
-          <div id="square" class="square-two"></div>
           <div id="square" class="square-three"></div>
+          <div id="square" class="square-nine"></div>
+          <div id="square" class="square-one"></div>
+          <div id="square" class="square-ten"></div>
+          <div id="square" class="square-two"></div>
           <div id="square" class="square-four"></div>
           <div id="square" class="square-five"></div>
           <div id="black-square" class="square-six"></div>
           <div id="square" class="square-eight"></div>
-          <div id="square" class="square-nine"></div>
         </div>
       </div>
     </div>
